@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Dowry calculator</h1>
+                <form>
+                  <!---EDUCATION LEVEL-->
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education">
+                        <option value="blank"></option>
+                        <option value="1"> Undergraduate degree</option>
+                        <option value="2">College degree</option>
+                        <option value="3">High school degree</option>
+                        <option value="4">Middle school degree</option>
+                    </form>
+                    </select>
+                    <hr>
+                    <label for="family_networth">Family networth</label><br>
+                    <select id="networth">
+                      <form>
+                        <!---FAMILY NETWORTH---->
+                        <option value="blank"></option>
+                        <option value="1">More than 10,000$</option>
+                        <option value="2">Between 5,000$ and 10,000$</option>
+                        <option value="3">Less than 5,000$</option>
+                      </form>
+                         </select>
+                    <hr> 
+                    <label for="Caste">Caste</label><br>
+                    <select id="Caste">
+                      <form>
+                        <!---CASTE------>
+                         <option value="blank"></option>
+                      <option value="1">Brahmin</option>
+                      <option value="2">Kshatriya</option>
+                      <option value="3">Vaishya</option>
+                      <option value="4">Shudra</option>
+                      <option value="5 ">Varna - untouchable </option>
+                      </form>
+                      </select>
+                    <hr>
+                    <section class="Skills">
+                      <p>Skills</p>
+                      <form >
+                        <!----SKILLS---------->
+                        <p><input type="checkbox" id="optionn1"> Playing on a musical instrument
+                        <input type="checkbox" id="optionn2"> Good cook
+                        <input type="checkbox" id="optionn3"> Easygoing character
+                        <input type="checkbox" id="optionn4"> Sings well</p>
+                       </form>
+                    </section>
+                   <hr>
+                   <section class="Age">
+                     <p>Age</p> 
+                     <form >
+                       <!------AGE--------->
+                      <input type="radio" id="Choice1"
+                      name="Age" value="Between 18-23">
+                     <label for="Choice1">Between 18-23</label>
+                     <input type="radio" id="Choice2"
+                      name="Age" value="Between 24-27">
+                     <label for="Choice2">Between 24-27</label>
+                     <input type="radio" id="Choice3"
+                      name="Age" value="28+">
+                     <label for="Choice3">28+</label>
+                     </form>
+                   </section>
+                   <hr>
+                   <section class="Reputation">
+                    <p>Reputation</p>
+                    <form >
+                      <!----REPUTATION---------->
+                      <p><input type="checkbox" id="reputation1"> Gossips about his/her parent's attitude
+                      <input type="checkbox" id="reputation2">Gossips about his/her character
+                      <input type="checkbox" id="reputation3"> General gossips around his/her person </p>
+                     </form>
+                  </section>
+                 <hr>
+                <button id="submit" type="button" class="btn btn-primary">Calculate price</button>                  <button onClick="window.location.reload();" class="btn btn-primary" >Reset</button><br>
+                <span id="res">Result</span> <br>
+                
+                <!---in this assignment i used a template and by adding some section such as "caste"
+                the CSS code is well done and i just add css code for button-->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
